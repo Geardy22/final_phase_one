@@ -17,7 +17,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
     background: #043873;
-    overflow-x: hidden;
 }
 
 a {
@@ -50,6 +49,7 @@ img {
 }
 
 .navbar ul li a {
+    font-family: 'DM Sans', sans-serif;
     padding: 10px 5px;
     display: block;
     font-weight: 350;
@@ -79,9 +79,6 @@ img {
 .hero {
     padding: 10px 0 40px;
 }
-
-
-
 
 /* Utility Classes */
 
@@ -187,4 +184,20 @@ img {
 .w-bg {
     background-image: url('/images/Element.png');
     background-repeat: no-repeat;
+}
+
+
+/* Media Queries */
+@media (max-width: 960px) {
+    
+}
+
+@media (max-width: 720px) {
+    .navbar ul li a i {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+
 }
