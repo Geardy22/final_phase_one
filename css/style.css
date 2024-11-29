@@ -16,7 +16,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background: #043873;
+    background: #fff;
 }
 
 a {
@@ -35,7 +35,7 @@ img {
 /* Navbar */
 
 .navbar {
-    padding: 20px;
+    padding: 10px;
 }
 
 .navbar .container {
@@ -50,9 +50,9 @@ img {
 
 .navbar ul li a {
     font-family: 'DM Sans', sans-serif;
-    padding: 10px 5px;
+    padding: 15px 10px;
     display: block;
-    font-weight: 350;
+    font-weight: 280;
     transition: 0.5s;
 }
 
@@ -61,11 +61,11 @@ img {
 }
 
 .navbar ul li a i {
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .navbar ul li:nth-child(5) a {
-    margin-left: 10px;
+    gap: 10px;
 }
 
 .navbar ul li:last-child a {
@@ -77,19 +77,41 @@ img {
 /* Hero Class */
 
 .hero {
-    padding: 10px 0 40px;
+    padding: 60px 0;
+}
+
+.hero .container {
+    height: 800px;
+}
+
+.hero .hero-content {
+    display: flex;
+    margin-top: 40px;
+}
+
+.hero .hero-heading {
+    width: 50%;
+}
+
+.hero .hero-text-block {
+    width: 70%;
+}
+
+.hero .hero-text {
+    width: 70%;
+    margin-bottom: 40px;
 }
 
 /* Utility Classes */
 
 .container {
-    max-width: 1100px;
+    max-width: 1920px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 220px;
 }
 
 .container-sm {
-    max-width: 800px;
+    max-width: 720px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -97,17 +119,8 @@ img {
 /* Buttons */
 
 .btn {
-    display: inline-block;
-    padding: 13px 20px;
-    background: var(--primary-color);
-    color: #fff;
-    font-weight: 600;
-    text-decoration: none;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    text-align: center;
-    transition: 0.5s;
+    font-weight: bold;
+    color: fff;
 }
 
 .btn:hover {
@@ -119,11 +132,17 @@ img {
     color: #fff;
 }
 
+.btn-light-blue {
+    background: var(--primary-color);
+    padding: 16px 40px;
+    border-radius: 8px;
+}
+
 .btn-light-yellow {
     background: var(--yellow-color);
     color: var(--darkblue-color);
-    width: 60px;
-    font-weight: 500;
+    padding: 16px 40px;
+    border-radius: 8px;
 }
 
 .btn-block {
@@ -179,11 +198,13 @@ img {
 
 .bg-dark-blue {
     background: var(--darkblue-color);
+    color: #fff;
 }
 
 .w-bg {
     background-image: url('/images/Element.png');
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 
