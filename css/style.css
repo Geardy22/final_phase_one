@@ -402,6 +402,17 @@ img {
     vertical-align: bottom;
 }
 
+.pricing-card-body ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: flex-start;
+}
+
+.pricing-card-body span{
+    margin: auto 0;
+}
+
 
 /* Utility Classes */
 
@@ -515,6 +526,12 @@ img {
     text-align: center;
 }
 
+/* Unordered List */
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
 /* Backgroud */
 
 .bg-white {
@@ -571,6 +588,13 @@ img {
 /* Icon image */
 .checkbox-icon path {
     stroke :#212529;
+}
+
+.checkbox-icon {
+    width: 20px;
+    height: 21px;
+    flex-shrink: 0;
+    align-items: center;
 }
 
 /* Media Queries */
