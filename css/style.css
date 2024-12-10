@@ -362,6 +362,10 @@ img {
     padding-top: 140px;
 }
 
+.pricing .container {
+    height: 1100px;
+}
+
 .pricing .pricing-subheading {
     width: 160% 100%;
 }
@@ -435,7 +439,20 @@ img {
     border: 1px solid #ffe492;
     border-radius: 10px;
     padding: 20px;
+    transition: all 0.3s;
 }
+
+
+.card:hover {
+    transform: scaleY(1.2);
+}
+
+/* Pricing with hovering effect */
+.pricing-card-content {
+    transform: scaleY(calc(1/1.001));
+    transition: transform 0.3s ease;
+}
+
 
 /* Buttons */
 
@@ -511,7 +528,7 @@ img {
 .text-md {
     font-size: 1.2rem;
     line-height: 1.4;
-    font-weight: normal;
+    font-weight: 500;
     margin: 20px 0 10px;
 }
 
