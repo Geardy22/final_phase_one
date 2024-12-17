@@ -402,9 +402,10 @@ img {
 
 .price-list-grid ul li svg {
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 2px;
     vertical-align: bottom;
 }
+
 
 .pricing-card-body ul li {
     display: flex;
@@ -418,12 +419,43 @@ img {
 }
 
 
+.price-list-grid .card:hover{
+    background-color: #043873;
+    color: #FFF;
+}
+
+.price-list-grid .card:hover .pricing-card-content{
+    align-items: center;
+}
+
+.price-list-grid .card:hover .pricing-card-header {
+    color: #ffe492;
+}
+
+.price-list-grid .card:hover .pricing-card-content .checkbox-icon path {
+    stroke :#ffe492;
+}
+
+.price-list-grid .card:hover .btn{
+    border: none;
+    background-color: #4f9cf9;
+    color: #FFF;
+}
+
+.price-list-grid .card:hover .pricing-card-content {
+    transform: none;
+}
+
+
+
+
+
 /* Utility Classes */
 
 .container {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 0 212px;
+    padding: 0 220px;
 }
 
 .container-sm {
@@ -440,17 +472,6 @@ img {
     border-radius: 10px;
     padding: 20px;
     transition: all 0.3s;
-}
-
-
-.card:hover {
-    transform: scaleY(1.2);
-}
-
-/* Pricing with hovering effect */
-.pricing-card-content {
-    transform: scaleY(calc(1/1.001));
-    transition: transform 0.3s ease;
 }
 
 
@@ -602,10 +623,6 @@ ul {
     font-weight: lighter;
 }
 
-/* Icon image */
-.checkbox-icon path {
-    stroke :#212529;
-}
 
 .checkbox-icon {
     width: 20px;
