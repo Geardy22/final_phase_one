@@ -30,7 +30,7 @@ ul {
     list-style: none;
 }
 
-img {
+img { 
     max-width: 100%;
 }
 
@@ -383,9 +383,7 @@ img {
     margin-top: 100px;
 }
 
-.price-list-grid .pricing-card-content {
-    margin: 0px 27px;
-}
+
 
 .price-list-grid .pricing-heading {
     font-size: 24px;
@@ -417,13 +415,15 @@ img {
     margin: auto 0;
 }
 
+.pricing-card
+
 
 /* Utility Classes */
 
 .container {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 0 212px;
+    padding: 0 220px;
 }
 
 .container-sm {
@@ -441,18 +441,6 @@ img {
     padding: 20px;
     transition: all 0.3s;
 }
-
-
-.card:hover {
-    transform: scaleY(1.2);
-}
-
-/* Pricing with hovering effect */
-.pricing-card-content {
-    transform: scaleY(calc(1/1.001));
-    transition: transform 0.3s ease;
-}
-
 
 /* Buttons */
 
@@ -549,7 +537,7 @@ ul {
     list-style-type: none;
 }
 
-/* Backgroud */
+/* Background */
 
 .bg-white {
     background-color: #fff;
