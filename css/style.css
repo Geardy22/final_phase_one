@@ -400,9 +400,9 @@ img {
 
 .price-list-grid ul li svg {
     margin-right: 10px;
-    margin-top: 10px;
     vertical-align: bottom;
 }
+
 
 .pricing-card-body ul li {
     display: flex;
@@ -414,8 +414,6 @@ img {
 .pricing-card-body span{
     margin: auto 0;
 }
-
-.pricing-card
 
 
 /* Utility Classes */
@@ -441,6 +439,18 @@ img {
     padding: 20px;
     transition: all 0.3s;
 }
+
+
+.card:hover {
+    transform: scaleY(1.2);
+}
+
+/* Pricing with hovering effect */
+.pricing-card-content {
+    transform: scaleY(calc(1/1.001));
+    transition: transform 0.3s ease;
+}
+
 
 /* Buttons */
 
@@ -590,10 +600,6 @@ ul {
     font-weight: lighter;
 }
 
-/* Icon image */
-.checkbox-icon path {
-    stroke :#212529;
-}
 
 .checkbox-icon {
     width: 20px;
